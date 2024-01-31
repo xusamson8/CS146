@@ -1,7 +1,7 @@
 from ast import List
 
 class lab1:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
+    def twoSum(self, nums, target) :
         numMap = {}
         n = len(nums)
 
