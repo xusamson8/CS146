@@ -1,5 +1,3 @@
-from ast import List
-
 class lab1:
     def twoSum(self, nums, target) :
         numMap = {}
