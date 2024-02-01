@@ -1,6 +1,6 @@
 public class hw1 {
-    
-   public boolean isPalindrome(string s)
+
+   public boolean isPalindrome(String s)
 
    }
     
