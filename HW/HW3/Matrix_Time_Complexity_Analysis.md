@@ -4,7 +4,7 @@ lets say that the below is the psuedo code and how many times each line is ran f
 
 ```
 MATRIX_MULTIPLY(A, B): 
-  if columns(A) ≠ rows(B): [//]: <> (is executed 1 time)
+  if columns(A) ≠ rows(B): <> (is executed 1 time)
     raise ValueError("Matrix multiplication is not defined.") 
 
   rows_A ← number of rows in A // executed one time, initialization 
