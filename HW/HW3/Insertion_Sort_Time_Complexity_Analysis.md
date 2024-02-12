@@ -9,7 +9,7 @@ public static int[] insertionSort(int[] A, int n){ // happens 1 time
         int key = A[i]; // n-1 times , bc inside outer for loop
         int j = i-1; // n-1 times
 
-    while( j >= 0 ) && A[j] > key ){  //(n-1)( i times, i ranges from 1 to n-1)
+    while( j >= 0 ) && A[j] > key ){  //(n-1)( i times, i ranges from 1 to n-1) , sums to (N-1) * N / 2
         A[j+1] = A[j]; // same amt of times while loop condiiton is checked
         j = j-1; // same amt of times while loop condiiton is checked
     }
@@ -22,7 +22,7 @@ public static int[] insertionSort(int[] A, int n){ // happens 1 time
 
 when we add the times each line of code is ran all up and base it on a worst case scenario where the while loops have to be ran, 
 
-we will eventually end up with a simplified quation in the polynomial form > ax^2 + bx + c
+we will eventually end up with a simplified quation in the polynomial form > ax^2 + bx + c due to the while loop, if it goes from i to n-1, = 1+2+3+...+ n-1 = (N-1) * N / 2
 
 , therefore giving us the result that insertion sort has a *quadratic order of growth*
 
