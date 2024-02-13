@@ -15,9 +15,9 @@ MATRIX_MULTIPLY(A, B):
   for i from 1 to rows_A do: //runs for each row of matrix A, so rows_A times
     for j from 1 to cols_B do: //runs for each cols of matrix B, so cols_B times for each iteration of outer loop --> cols_B * rows_A times 
     sum ← 0 
-    for k from 1 to cols_A do: // runs cols_A time for each iteration of middle loop --> cols_B * rows_A * cols_A times
-      sum ← sum + A[i][k] * B[k][j] //executed every inner loop
-    result[i][j] ← sum return result
+      for k from 1 to cols_A do: // runs cols_A time for each iteration of middle loop --> cols_B * rows_A * cols_A times
+        sum ← sum + A[i][k] * B[k][j] //executed every inner loop
+      result[i][j] ← sum return result
 ```
 
 by approximately calculating how may time each line runs, we can add these up to figure out the order of growth of this matrix algorithm.
