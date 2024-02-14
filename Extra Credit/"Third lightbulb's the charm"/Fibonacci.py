@@ -1,3 +1,3 @@
-def Fibonacci
-
-#optimize for O(N)
+class Fibonacci:
+    def fibonacci(self, n):
+        

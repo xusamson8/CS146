@@ -5,8 +5,8 @@
 ```java
 public static int[] insertionSort(int[] A, int n){ // happens 1 time
 
-    for( int i = 1 ; i < N ; i++>){ // happens n-1 times if we assume first element is sorted
-        int key = A[i]; // n-1 times , bc inside outer for loop
+    for( int i = 1 ; i < N ; i++>){ // happens n+1 times
+        int key = A[i]; // n-1 times , bc inside outer for loop &  if we assume first element is sorted
         int j = i-1; // n-1 times
 
     while( j >= 0 ) && A[j] > key ){  //(n-1)( i times, i ranges from 1 to n-1) , sums to (N-1) * N / 2

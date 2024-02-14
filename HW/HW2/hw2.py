@@ -1,6 +1,6 @@
 class hw2:
     #You are given an API bool isBadVersion(version) which returns whether version is bad. 
-    def firstBadVersion(self, n: int) -> int:
+    def firstBadVersion(self, n):
         low, high = 1, n
         while low <= high:
 	        mid = low + (high-low) // 2

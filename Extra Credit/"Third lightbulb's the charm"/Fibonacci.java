@@ -1,4 +1,16 @@
-// optimize fibonacci to be O(N)
 public class Fibonacci {
-    //test comment
+    public static int fibonacci(int n ){
+        if( n == 0){
+            return 0;
+        }
+        if ( n == 1){
+            return 1;
+        }
+
+        for( int i = 2; i < n ; i++){
+
+        }           
+        
+    }         
 }
+
