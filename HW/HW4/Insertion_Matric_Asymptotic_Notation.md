@@ -11,9 +11,9 @@ Worst Case: The worst case for this algorithm would be if everything had to be c
 
 By our last homework, I calculated the growth of the Matrix Multiplication Algorithm, which starts off with (rows_A * cols_B cells) that is already given. And we stil have to do the inner loop which is cols_A, resulting in a total time of (rows_A * cols_B * cols_A)
 
-Since this isn't like sorting or searching, and every cell has to be multiplied and added up, every case should have the same time. which is O(rows_A * cols_B * cols_A). If we say that the size of each matrix is an aribitrary number N then it would be O(N^3).
+Since this isn't like sorting or searching, and every cell has to be multiplied and added up, every case (besdies edge case) should have the same time. which is O(rows_A * cols_B * cols_A). If we say that the size of each matrix is an aribitrary number N then it would be O(N^3).
 
-Best Case: **O(N^3)**
+Best Case: **O(N^3)** ; note: could be considered O(1) due to early termination (first line)
 
 Average Case: **O(N^3)**
 
