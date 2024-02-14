@@ -4,7 +4,8 @@
 For each of the following recurrences, verify the answer you get by applying the master method, by solving the recurrence algebraically OR applying the recursion tree method. 
 
 1. T(N) = 2T(N-1) + 1
-I solved this question using the substitution method. Lets say... T(N-1) = 2T(N-2) + 1, T(N-2) = 2T(N-3) + 1 ... so on and so forth
+
+- I solved this question using the substitution method. Lets say... T(N-1) = 2T(N-2) + 1, T(N-2) = 2T(N-3) + 1 ... so on and so forth
 We can then substitute T(N-1) into the original equation.
 Resulting in T(N) = 2T(2T(N-2)+1)+1 , and if we substituted T(N-2) ; T(N) = 2T(2T(2T(N-3)+1)+1)+1 ; on and on
 by performing k such operations, this equation will begin to look like ; T(N) = 2^k T(N-k) + k
