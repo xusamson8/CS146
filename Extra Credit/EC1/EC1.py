@@ -1,4 +1,4 @@
-class Fibonacci:
+class ec1:
     def fibonacci(self, n):
         #Base Cases
         if n==0:
@@ -13,6 +13,6 @@ class Fibonacci:
 
         return b
 
-print(Fibonacci().fibonacci(10))
+print(ec1().fibonacci(10))
 
 #pretty much the same as the java version but in python syntax.
