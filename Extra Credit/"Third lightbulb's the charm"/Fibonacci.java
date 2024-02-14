@@ -37,7 +37,10 @@ public class Fibonacci {
      * 
      * we can calculate that the time complexity of this implementation is O(N), 
      * 
-     * 
+     * where as in a recursive implementation it is not O(n)...
+     * for example lets say we did this recursively, like this...
+     * calling .. fibonacci(n-1) + fibonacci(n-2) which is a common way of doing fibonacci, 
+     * it would result in the time complexity not being O(n) because of the function calls itself twice each interval.
      * 
      */
 
