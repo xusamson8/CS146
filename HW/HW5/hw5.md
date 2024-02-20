@@ -19,7 +19,7 @@ by performing k such operations, this equation will begin to look like ; T(N) = 
 to get rid of the k , say k = n and look for the largest asymptotical term, then we will get ; T(N) = 3^n T(0) ; and T(N) is a constant
 Finally we can say this has a time complexity of Θ(3^n)
 
-3. T(N) = 9T(N/2) + n^2 = Θ(n^(logbase2(9))) --> **Θ(3.17)**
+3. T(N) = 9T(N/2) + n^2 = Θ(n^(logbase2(9))) --> **Θ(n^3.17)**
 - by recursing a few times ; T(N) = 9T(N/2) + N^2 ,T(N/2) = 9T(N/4) + (N/2)^2, T(N/4) = 9T(N/8) + (N/4)^2, ..., T(1) = 1 
 we can tell that it N gets halved at each level of recursion tree, we can set it to T(N/2^k), and we set k to something that makes the whole thing equal to 1, in which k would be log_2(N). summing the series up we get n^3.17.
 - checking our work with masters theorem verifies our answer, a = 9, b = 2, and f(N) = N^2. We compare f(N) with N^{logb(a)}, which is N^{log_2(9)} or N^{3.17} . Since f(N) = N^2 is polynomially smaller than N^{3.17}, this puts us in the first case of the master theorem. 
