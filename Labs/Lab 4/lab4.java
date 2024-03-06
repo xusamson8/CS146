@@ -34,7 +34,8 @@ public class lab4 {
          */
 
          if(root == null) return null; //can't check children if it doesn texist, if we do recursion we shd check base case
-         if (root.right ==null && root.left == null) return root; //leaf node
+         // redundant if statement? 
+         //if (root.right ==null && root.left == null) return root; //leaf node
          if(root.left != null){
             root.left = invertTree(root.left);
          }
