@@ -4,5 +4,5 @@ class TreeNode(object):
             self.left = left
             self.right = right
 
-class lab4():
+class lab4:
     def invertTree(self, root):
