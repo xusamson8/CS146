@@ -18,20 +18,23 @@ public class hw9 {
      }
 
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
-        if (root == null || root == p || root == q) return root;
+        if(root == null)
+            return null;
+        
+        if(root == p || root == q) //returns root value if equal to p or q, root can be LCA of itself
+            return root;
 
-        TreeNode curr = root;
+        TreeNode left = lowestCommonAncestor(root.left, p, q); //recursively searches the left subtree, finding p or q or null
+        TreeNode right = lowestCommonAncestor(root.right, p, q); //"" but for right subtree
 
-        while(curr != null){
-            if ( p.val > curr.val && q.val > curr.val ){
-                curr = curr.right;
-            }
-            else if( p,val < curr.val && q.val < curr.val){
-                curr = curr.left;
-            }
-            else{
-                return curr;
-            }
+         if(left == null) {
+            return right;
+        }
+        else if(right == null) {
+            return left;
+        }
+        else { //both left and right are not null, we found our result
+            return root;
         }
     }
 

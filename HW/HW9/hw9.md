@@ -1,9 +1,18 @@
 ### HW 9
-intuition: where a split occures, (if the valuesa re going ot a sepreate subtreee; then the lowest common ancestor has been found) or if both values are </> root, we know which way to go. if a value is the root itself, it is the ancestor of itself.
+intuition: check if roots exist or not, and check if its what we're finding. the LCA of something can be itself, (normal case and over lappin cases to consider). the recursion goes bottom to top, 
+1. if we find q and p , its parent has to be the LCA, (or if its itself)
+2. if one side is null, we return the node of what we have so far as the lowest
 
 #### Java 
-    same implementation and logic as pythoin version, but using java syntax.
+    use if statement to see if root exists., if its null we cant find the LCA return none
 
+    if it does exist, see if its equal to p or q, if its what we're finidng we can return it, the root can be the LCA. (if root is either of these values, we have found waht we're searching for.)
+
+    otherwise, we perform a search on this node. recursively search left and right subtrees; we have to find either p or q on the left or right, we keeop going down with the recursion and search. when it comes back up (the base cases would be met)
+    the bases cases would come back to us, thn e would have to analyze it
+
+    if we get nothing on the right search, we return what we got on the left search, vice versa, . But if both come back, the node that we are holding is the LCA (we found something on both the right and left then we return ourselves)
+    
 
 #### Python
-    we use the given definition of a tree in python. Assuming BST property, we first initiliaze and start with setting out current element as the root. while current isnt null, if p and q values are both greater than the current value, we set the right element of the curr to the new curr. Vice versa for the left side, but if these arent the cases this means that the root is equal to one of the values, or there has been a split (both values are no longer greater than root, ex: one may got left and one may go right); this means that we are at the LCA, we have found it and then return it.
+    same implementation as java version but in python syntax
