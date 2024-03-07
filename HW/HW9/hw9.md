@@ -3,6 +3,8 @@ intuition: check if roots exist or not, and check if its what we're finding. the
 1. if we find q and p , its parent has to be the LCA, (or if its itself)
 2. if one side is null, we return the node of what we have so far as the lowest
 
+if we have to go left or right, the root is updated, we are still looking for p or q, if we hit something that meets the conditions we stop, and return it. Other wise we go all the way to the bottom and keep comparing with its parents, (what is meant by when recursing it goes bottom to up)
+
 #### Java 
     use if statement to see if root exists., if its null we cant find the LCA return none
 

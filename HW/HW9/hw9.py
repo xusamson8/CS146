@@ -24,15 +24,25 @@ class hw9:
         if left and right:
             return root
         else:
-        # otherwise, only one of the chidren returned a node, meaning either p or q ertr found on left or right branch. 
-        # in this case where the node was found would be the LCA
-            return left or right
-        
+        # otherwise, only one of the chidren returned a node, meaning either p or q are found on left or right branch. 
+        # in this case where the node was found it would be the LCA
+            return left or right 
 
-        
+# instantiation of hw9 class
+tree = hw9()
 
-# Create the tree
-tree1 = 
-#given test cases
-print(hw9().lowestCommonAncestor(tree1, 1, 5)) #4, 4 is the only common ancestor of 1 and 5.
-print(hw9().lowestCommonAncestor(tree1, 3, 1)) # expected output 3,  Since 3 is the parent of 1, 3 is the lowest common ancestor of 3 and 1.  
+# given test case and tree, construction of tree
+node1 = TreeNode(1)
+node3 = TreeNode(3, left=node1)  # Node 3 has left child node 1
+node5 = TreeNode(5)
+node9 = TreeNode(9)
+node8 = TreeNode(8, left=node5, right=node9)  
+root = TreeNode(4, left=node3, right=node8)  
+
+#testing methods
+LCA1 = tree.lowestCommonAncestor(root, node3, node1)  # ecpected node 3
+LCA2 = tree.lowestCommonAncestor(root, node1, node5)  # ecpected node 4
+
+# Printing values of results, have to do this orthewise it will print "0x100d7ef90>" which is probbaly the node itself
+print(LCA1.val if LCA1 else None)  # Expected to print 4 
+print(LCA2.val if LCA2 else None)  # Expected to print 3
