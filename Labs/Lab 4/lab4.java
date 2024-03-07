@@ -28,5 +28,4 @@ public class lab4 {
         root.right = tmp;
         return root; 
         }
-    
 }

@@ -18,7 +18,7 @@ class lab4:
             # tuple unpacking makes multiple assignments in a single statement possible and is particularly useful for swapping operations.
             #tmp = root.left;
             #root.left = root.right;
-            #root.right = tmp; 
+            #root.right = tmp;
 
          
              
