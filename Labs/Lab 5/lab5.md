@@ -11,6 +11,10 @@ example:
         every time we look at a new subtree, update upper and lwor bounds
 
 code: we will need a helper method with bounds
+we'll start with the helper function, where we create an if statement to check if the node is null, if it is then return true (an empty bst is still a bst), an another if statement, to see if the node satisfies the properties of BST with the bounds, if it doesn't then return false. 
+we call this recusively, which updates the node to the left / right child, and updates the max or minbound.
+
+for the main function, we start with the root node, and the bounds the min/max value of long as it can be infinitely large.
 
 #### Python
 same implementation as java, but with python syntax
