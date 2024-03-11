@@ -14,11 +14,19 @@ public class lab5 {
      }
 
      public boolean isValidBST(TreeNode root) {
-        if (root == null ) return true; //if there is no value it counts as valid
-        ///min max helper function when looing at subtrees?
-        //uupper bound 5 (highest possible value in left subtree) vice versa
-        // that means if we see a value higher thean the upper bound in the left subtree its automatically false
-        //every time we look at a new subtree, update upper and lwor bounds
-     }
+        return isValidBSTHelper(root, Long.MIN_VALUE, Long.MAX_VALUE);     
+        //we start off with the root, and bound it off with these values
+        // say -∞ < root.val < ∞
+    }
+
+    //helper function with bounds (max and min, helps validate if BST definition still met, with other nodes)
+    public boolean isValidBSTHelper(TreeNode root, long minBound, long maxBound){
+        if(root == null) return true; //if there is no value it counts as valid
+        if (root.val > maxBound || root.val < minBound) {return false; } //if the BST properties are not valid anymore
+        // we goto the left node, the new root is the left node we goto, the minimum value stays the same as what was set before (so it still meets the bst properties ), 
+        //the maximum value will now be the root's value.
+        return isValidBSTHelper(root.left, minBound, root.val) && isValidBSTHelper(root.right, root.val, maxBound);
+    
+    }
 
 }
