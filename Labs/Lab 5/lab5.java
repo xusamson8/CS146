@@ -14,20 +14,7 @@ public class lab5 {
      }
 
      public boolean isValidBST(TreeNode root) {
-        /*if (root == null ) return true;
-        TreeNode curr = root;
-        if (curr.left.val > curr.val ){
-            return false;
-        }
-        else if ( curr.right.val < curr.val ){
-            return false;
-        }
-        else{
-            return true;
-        }
-        return isValidBST(curr.left) && isValidBST(curr.right); */
-
-        if (root == null ) return true;
+        if (root == null ) return true; //if there is no value it counts as valid
         ///min max helper function when looing at subtrees?
         //uupper bound 5 (highest possible value in left subtree) vice versa
         // that means if we see a value higher thean the upper bound in the left subtree its automatically false
