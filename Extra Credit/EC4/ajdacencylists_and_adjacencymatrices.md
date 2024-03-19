@@ -1,10 +1,41 @@
-Given an adjacency list, how can you convert it to an adjacency matrix? 
-Given an adjacency matrix, how can you convert it to an adjacency list? 
-Given a directed graph, how can you reverse the direction of each edge? 
-To receive extra credit, you must: 
+### "Everything Everywhere All At Once"
+implementations (in both java and python) and explanations are all presented under each question in this markdown file.
 
-Answer all three questions with AT LEAST pseudocode and an explanation.
-If you're feeling brave, try and implement the above three as functions in Java OR Python! (Remember, more effort means higher chances of double/triple extra credit!) 
-In the same folder, have a markdown/pdf/text file explaining your findings. 
-Submit only the link to your github repo with the extra credit folder. 
+#### Given an adjacency list, how can you convert it to an adjacency matrix? 
+- since an adjacency list contains a list for each vertex, and inside the list are lists that contain the neighbors of the vertex. With this knowledge, we 
+
+``` python
+
+```
+
+``` java
+
+```
+
+
+#### Given an adjacency matrix, how can you convert it to an adjacency list? 
+- 
+
+- - python implementation below
+``` python
+
+```
+
+- - java implementation below
+``` java
+
+```
+
+
+#### Given a directed graph, how can you reverse the direction of each edge?
+- 
+
+``` python
+
+```
+
+``` java
+
+```
+
 
