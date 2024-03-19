@@ -6,42 +6,45 @@ implementations (in both java and python) and explanations are all presented und
 (for the purposes of this class we would set the vertex referring to itself to False).
 
 
-    - python implementation below
+- python implementation below
 ``` python
 
 ```
 
-    - java implementation below
+- java implementation below
 ``` java
 
 ```
 
+
+<br/>
 
 #### Given an adjacency matrix, how can you convert it to an adjacency list? 
 - 
 
-    - python implementation below
+- python implementation below
 ``` python
 
 ```
 
-    - java implementation below
+- java implementation below
 ``` java
 
 ```
 
+<br/>
 
 #### Given a directed graph, how can you reverse the direction of each edge?
 - 
 
-    - python implementation below
+- python implementation below
 
 ``` python
 
 ```
 
 
-    - java implementation below
+- java implementation below
 ``` java
 
 ```
