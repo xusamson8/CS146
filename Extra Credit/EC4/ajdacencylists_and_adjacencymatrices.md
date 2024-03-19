@@ -18,28 +18,28 @@ implementations (in both java and python) and explanations are all presented und
 
 
 #### Given an adjacency matrix, how can you convert it to an adjacency list? 
->
+- 
 
->> python implementation below
+    - python implementation below
 ``` python
 
 ```
 
->> java implementation below
+    - java implementation below
 ``` java
 
 ```
 
 
 #### Given a directed graph, how can you reverse the direction of each edge?
->
+- 
 
->> python implementation below
+    - python implementation below
 ``` python
 
 ```
 
->> java implementation below
+    -java implementation below
 ``` java
 
 ```
