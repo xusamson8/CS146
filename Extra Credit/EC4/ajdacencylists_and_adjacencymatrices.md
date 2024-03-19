@@ -3,11 +3,13 @@ implementations (in both java and python) and explanations are all presented und
 
 #### Given an adjacency list, how can you convert it to an adjacency matrix? 
 - since an adjacency list contains a list for each vertex, and inside the list are lists that contain the neighbors of the vertex. With this knowledge, we 
-
+\
+- - python implementation below
 ``` python
 
 ```
 
+- - java implementation below
 ``` java
 
 ```
@@ -30,10 +32,12 @@ implementations (in both java and python) and explanations are all presented und
 #### Given a directed graph, how can you reverse the direction of each edge?
 - 
 
+- - python implementation below
 ``` python
 
 ```
 
+- - java implementation below
 ``` java
 
 ```
