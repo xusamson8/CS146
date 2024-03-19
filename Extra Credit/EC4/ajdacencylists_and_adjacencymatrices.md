@@ -35,11 +35,13 @@ implementations (in both java and python) and explanations are all presented und
 - 
 
     - python implementation below
+
 ``` python
 
 ```
 
-    -java implementation below
+
+    - java implementation below
 ``` java
 
 ```
