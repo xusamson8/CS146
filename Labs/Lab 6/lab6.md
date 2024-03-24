@@ -26,8 +26,4 @@ if our count at then end matches the number of courese then we can return true
 
 
 #### Python
-DFS approach 
-what we'll do:
-map each course to a list of its prerequisites (adjancency list and hashmap) 
-DFS: recursively,
-we can run i to its neighbors and see the prerequisites, see if we can complete the course and look and its preqquistiers until we see a course we can complete. and if we loop back to a value already visited, then it is impossible. 
+similar approach with kahns and bfs, but in python syntax
