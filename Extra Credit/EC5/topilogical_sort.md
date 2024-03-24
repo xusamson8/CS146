@@ -8,6 +8,9 @@ DFS is typically implemented with LIFO (a stack if you will) - last in first out
 BFS typically implemented with FIFO (a queue if you will) - first in first out.
 <br/>
 
+## question: is kahn's techniaclly a BFS Topological Sort??
+(this is why an implementation of the BFS isnt present here)
+
 ## Kahn's Algorithm
 
 Kahn’s Algorithm for Topological Sorting:
@@ -60,5 +63,4 @@ Step 6: This is the final step of the Topological sorting in which we pop all th
 
 <br/>
 
-## question: is kahn's techniaclly a BFS Topological Sort??
 
