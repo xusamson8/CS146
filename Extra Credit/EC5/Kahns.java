@@ -6,8 +6,6 @@ import java.util.Queue;
 
 public class Kahns {
 
-    //!!!! CONTAINS KAHN's ALGORITHM, DFS, AND BFS TOPOLOGICAL SORTS !!!!
-
     // start of kahn's algorithm topological sort
     public static List<Integer> Kahn(List<List<Integer> > adj, int V)
     {
@@ -50,8 +48,6 @@ public class Kahns {
     }
     //end of kahn's algorithm topological sort
  
-
-
     public static void main(String[] args)
     {
         int n = 4; // Number of nodes

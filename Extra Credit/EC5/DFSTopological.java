@@ -5,8 +5,7 @@ import java.util.Stack;
 
 public class DFSTopological {
     // start of function to perform DFS and topological sorting
-    static void
-    DFStopologicalSortUtil(int v, List<List<Integer> > adj,
+    public static void DFStopologicalSortUtil(int v, List<List<Integer> > adj,
         boolean[] visited,
         Stack<Integer> stack)
     {
@@ -25,8 +24,7 @@ public class DFSTopological {
     }
   
     // Function to perform DFS Topological Sort
-    static void DFStopologicalSort(List<List<Integer> > adj,
-        int V)
+    public static void DFStopologicalSort(List<List<Integer> > adj, int V)
     {
         // Stack to store the result
         Stack<Integer> stack = new Stack<>();

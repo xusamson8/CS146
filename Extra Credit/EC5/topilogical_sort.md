@@ -60,5 +60,5 @@ Step 6: This is the final step of the Topological sorting in which we pop all th
 
 <br/>
 
-## is kahn's a BFS Topological Sort??
+## question: is kahn's techniaclly a BFS Topological Sort??
 
