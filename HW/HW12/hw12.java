@@ -3,6 +3,7 @@
 public class hw12 {
     
     public int minCostToSupplyWater(int n, int[] wells, int[][] pipes) {
+        
     }
     public static void main(String[] args) {
         hw12 solution = new hw12();
