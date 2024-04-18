@@ -7,6 +7,10 @@ Notice that the distance of a path connecting cities i and j is equal to the sum
 
 Intuition: since we are looking for the *smallest number* of cities that are reachable through some path, we should use Floyd Warshall's algorithm. 
 #### Java
-
+create a 2d matri first, and then create the paths to the cities, use floyd warshalls algorithm see which distance is the shortest by using math min, 
+the numbers to the cities have to be smaller than the threshold , increment the count of possibilities for the city
+with this count, we keep track of a city that has the smallest number of reachable paths
+return that city
 
 #### Python
+similar intuition, syntax in python
